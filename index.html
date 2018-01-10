@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>波浪线</title>
+    <style>
+        *{
+            overflow:hidden;
+            margin:0;
+            width:100%;
+            height:100%;
+        }
+        .c{
+            background:black;
+        }
+        div{
+            width:100px;
+            height:100px;
+            position:absolute;
+            bottom:100px;
+            left:50%;
+            transform:translateX(-50%);
+            overflow:hidden;
+            display:none;
+        }
+        div>img{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <canvas class="c">波浪线</canvas>
+    <script src="index.js"></script>
+    <div id="div" onclick="startRecording()"><img src="luyin.jpg" alt=""></div>
+</body>
+    <script src="luyin.js"></script>
+    <script src="diaoyong.js"></script>
+</html>
